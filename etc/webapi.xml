@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../app/code/Magento/Webapi/etc/webapi.xsd">
+    <route url="/V1/getproductimage/:sku" method="GET">
+        <service class="EonInfosys\Catalog\Api\ProductAttributeImgInterface" method="getProductImageUrl"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+<!--categories Images -->
+    <route url="/V1/eonb/categories" method="GET">
+        <service class="EonInfosys\Catalog\Api\CategoryManagementInterface" method="getTree" />
+        <resources>
+            <resource ref="Magento_Catalog::categories" />
+        </resources>
+    </route>
+ 
+</routes>

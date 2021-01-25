@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <preference for="EonInfosys\Catalog\Api\ProductAttributeImgInterface" type="EonInfosys\Catalog\Model\GetProductImageUrl"></preference>
+    <preference for="EonInfosys\Catalog\Api\CategoryManagementInterface" type="EonInfosys\Catalog\Model\CategoryManagement"></preference>
+</config>
